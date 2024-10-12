@@ -29,4 +29,8 @@ jobs:
             -   name: Build
                 run: |
                     ${{env.CCACHE_SETTINGS}}
-                    make release-noaes -j3
+                    USE_SINGLE_DIR=1 make release-noaes -j3
+            -   uses: actions/upload-artifact@v4
+                with:
+                    name: mac-arm64
+                    path: /home/runner/work/nerva/nerva/build/**/**/**/bin/nerva*
