@@ -34,4 +34,4 @@ jobs:
                 with:
                     name: mac-armv8
                     path: |
-                        /home/runner/work/${{ github.event.repository.name }}/${{ github.event.repository.name }}/build/${{ matrix.toolchain.host }}/**/release/bin/nerva*
+                        build/**/**/**/bin/nerva*
