@@ -29,8 +29,9 @@ jobs:
             -   name: Build
                 run: |
                     ${{env.CCACHE_SETTINGS}}
-                    USE_SINGLE_DIR=1 make release-static-mac-arm64 -j3
+                    USE_SINGLE_DIR=1 make release-static-mac-armv8 -j3
             -   uses: actions/upload-artifact@v4
                 with:
-                    name: mac-arm64
-                    path: 'build/**/**/**/bin/nerva*'
+                    name: mac-armv8
+                    path: |
+                        /home/runner/work/${{ github.event.repository.name }}/${{ github.event.repository.name }}/build/${{ matrix.toolchain.host }}/**/release/bin/nerva*

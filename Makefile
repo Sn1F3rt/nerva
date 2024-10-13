@@ -150,9 +150,9 @@ release-static-mac-x86_64:
 	mkdir -p $(builddir)/release
 	cd $(builddir)/release && cmake -D STATIC=ON -D ARCH="x86-64" -D BUILD_64=ON -D CMAKE_BUILD_TYPE=Release -D BUILD_TAG="mac-x64" $(topdir) && $(MAKE)
 
-release-static-mac-arm64:
+release-static-mac-armv8:
 	mkdir -p $(builddir)/release
-	cd $(builddir)/release && cmake -D STATIC=ON -D NO_AES=ON -D ARCH="arm64" -D BUILD_64=ON -D CMAKE_BUILD_TYPE=Release -D BUILD_TAG="mac-armv8" $(topdir) && $(MAKE)
+	cd $(builddir)/release && cmake -D STATIC=ON -D NO_AES=ON -D ARCH="armv8-a" -D BUILD_64=ON -D CMAKE_BUILD_TYPE=Release -D BUILD_TAG="mac-armv8" $(topdir) && $(MAKE)
 
 release-static-linux-i686:
 	mkdir -p $(builddir)/release
