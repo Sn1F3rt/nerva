@@ -21,11 +21,11 @@ Nerva offers true privacy and fungibility, is totally untraceable and unlinkable
 
 You can download precompiled binaries from the [releases][nerva-releases-link].
 
-Alternatively, see [docs/BUILDING](docs/BUILDING.md) for build instructions.
+Alternatively, see [docs/BUILDING.md](docs/BUILDING.md) for build instructions.
 
 ## Contributing
 
-We welcome all contributions from the community. If you are looking to help out, please refer to [CONTRIBUTING](docs/CONTRIBUTING.md)) for a set of guidelines.
+We welcome all contributions from the community. If you are looking to help out, please refer to [CONTRIBUTING.md](docs/CONTRIBUTING.md)) for a set of guidelines.
 
 ## Help
 
